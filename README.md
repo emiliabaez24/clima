@@ -38,7 +38,7 @@ Las dependencias principales para este proyecto incluyen:
 -   **Redux Persist**: Para mantener el estado incluso después de una recarga de página.
 - **Axios**: Para realizar peticiones HTTP a la API de OpenWeatherMap.
 
-> npm install react-router-dom @reduxjs/toolkit react-redux
-> npm install redux-persist
-> npm install axios
+> npm install react-router-dom @reduxjs/toolkit react-redux  
+> npm install redux-persist  
+> npm install axios  
 
