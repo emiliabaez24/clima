@@ -6,11 +6,13 @@ import Pantalla2 from './paginas/Pantalla2';
 function App() {
   return(
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Pantalla1 />}/>
-        <Route path="/Pantalla2" element={<Pantalla2 />}/>
-        <Route path="*" element={<Navigate to="/"/>}/>
-      </Routes>
+    <div>
+        <Routes>
+          <Route path="/" element={<Pantalla1 />}/>
+          <Route path="/Pantalla2" element={<Pantalla2 />}/>
+          <Route path="*" element={<Navigate to="/"/>}/>
+        </Routes>
+    </div>
     </BrowserRouter>
   );
 }

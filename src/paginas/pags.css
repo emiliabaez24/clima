@@ -1,0 +1,20 @@
+.p1{
+    color:black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.bot{
+    background-color: blue;
+    color:black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.bot:hover {
+    filter: drop-shadow(0 0 2em blue);
+}
+
+h1{
+    color:black;
+}
