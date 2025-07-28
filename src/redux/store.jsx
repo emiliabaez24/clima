@@ -13,7 +13,7 @@ import { persistReducer, persistStore } from "redux-persist";
 import { combineReducers } from "@reduxjs/toolkit";
 
 /*para que los actions puedan ser funciones asincronas*/
-import thunk from 'redux-thunk';
+// import { thunk } from 'redux-thunk';
 
 const persistConfig = {
     key: 'root',            //todo el estado estara bajo esa clave en el localStorage
@@ -31,7 +31,10 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 /*creacion del store del redux, persistido y con el middleware*/
 export const store = configureStore({
     reducer: persistedReducer,          //Reducers
-    middleware: [thunk],                // middleware
+    middleware: (getDefaultMiddleware) => //middleware
+        getDefaultMiddleware({
+          serializableCheck: false, // Necesario para redux-persist
+        }),                
 });
 
 /*persistor para main, se asegura que react espere a que redux cargue el estado 
