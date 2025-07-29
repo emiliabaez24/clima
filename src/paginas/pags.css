@@ -8,3 +8,17 @@
 .bot:hover {
     filter: drop-shadow(0 0 2em blue);
 }
+
+.climas-grid {
+    color:white;
+    display:grid;
+    grid-template-columns: 200px 200px 200px; /* Creates three equal-width columns */
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+}
+
+.tarjeta-clima {
+    background-color:black;
+    border-radius: 10px;
+    text-align: center;
+}
