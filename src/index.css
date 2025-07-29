@@ -33,6 +33,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color:black;
+  font-weight: bold;
 }
 
 button {
@@ -49,6 +51,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
